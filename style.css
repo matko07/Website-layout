@@ -1,0 +1,340 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family:sans-serif;
+    background: linear-gradient(to right,#fdfdfd,#ebedee 70%);
+}
+
+::-webkit-scrollbar{
+    width: 20px;
+}
+
+::-webkit-scrollbar-track{
+    background:#353434;
+}
+
+::-webkit-scrollbar-thumb{
+    background: #073f99;
+}
+
+.navbar{
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 55px;
+    z-index: 1;
+    background-color: #212c58;
+    color:rgb(185, 140, 140);
+}
+
+.name {
+    position: relative;
+    left: 20px;
+    font-size: 1.5rem;
+    margin: 0.5rem;
+}
+
+.name img{
+    position: relative;
+    right: 20px;
+    height: 30px;
+    object-fit: cover;
+}
+.navbar-links ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar-links li{
+    list-style: none;
+}
+
+.navbar-links li a{
+    text-decoration: none;
+    color:white;
+    padding: 1rem;
+    display: block;
+}
+
+.navbar-links li:hover{
+    background-color: rgb(102, 90, 199);
+}
+
+.umschalt-knopf{
+    position: absolute;
+    top: 0.75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.umschalt-knopf .bar{
+    height: 3px;
+    width:100%;
+    background-color: white;
+    border-radius: 10px;
+}
+html {
+    font-size: 1em;
+  }
+  
+  h1 {
+    font-size: 2rem;
+  }
+  
+ 
+.willkommen-text{
+    position: absolute;
+    height: 200px;
+    width:40%;
+    margin: 25% 30%;
+    text-align: center;
+}
+
+
+.willkommen-text h1{
+    text-align: center;
+    color: #212c58;
+    text-transform: uppercase;
+    font-size: 80px;
+    font-family: sans-serif;
+    font-weight: 900;
+    margin: auto;
+}
+
+.willkommen-text a{
+    border: 2px solid #fff;
+    background-color: #212c58;
+    padding: 10px 25px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 20px;
+    margin-top: 25px;
+    font-weight: 400;
+    display: inline-block;
+    color:#fff;
+    transition: text-shadow 0.5s, box-shadow 0,5s;
+    
+}
+.willkommen-text a:hover{
+    text-shadow: -2px -2px 10px #fff,
+                2px 2px 10px #fff,
+                0 0 20px #f10,
+                0 0 40px #f10,
+                0 0 60px #f10,
+                0 0 80px #f10,
+                0 0 100px #f10;
+
+    box-shadow: 0 0 5px #fff,
+                inset 0 0 5px #fff,
+                0 0 20px #08f,
+                inset 0 0 20px #08f,
+                0 0 40px #08f,
+                inset 0 0 40px #08f;
+                                                                            
+}
+.Home-seite{
+    background: url(Picture.jpg);
+    height: 100vh;
+    width:100%;
+    -webkit-background-size:cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: center center;
+    position: relative;
+}
+.Statistiken-seite{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    border:solid;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+    height: 105vh;
+}
+.Sehenswürdigkeiten-seite{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    border:solid;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+    height: 100vh;
+}
+.arbeitswelt-seite{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    border:solid;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+    height: 100vh;
+}
+.Besonderheiten-seite{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    border:solid;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+    height: 100vh;
+}
+.sonstiges-seite{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    border:solid;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+    height: 100vh;
+}
+.container{
+    position:absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+
+.text-part{
+    padding-top: 10px;
+    width: 99%;
+    height: 96%;
+    background: linear-gradient(90deg,#00dbde,#fc00ff);
+    text-transform:none;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+}
+.sight_container{
+    display: grid;
+    grid-template-columns:  repeat(auto-fit, minmax(560px, 1fr));
+
+    column-gap: 10px;
+    row-gap: 5px;
+}
+
+.sight{
+    height: 300px;
+    border: 3px solid #ccffff;
+
+    box-shadow: 5px 5px 5px #073f99;
+
+    display: flex;
+}
+
+.sight img{
+        width: 100%;
+        height: 100%;
+        border: 2px solid black;
+        object-fit: cover;
+    }
+
+.img-Stats{
+    height: 320px;
+    padding-right: 2.5%;
+    float: right;
+
+}
+.img-Stats2{
+   margin-left: auto;    
+   height: 300px;
+   padding-right: 2.5%; 
+   float: right;
+}
+.img3{
+    margin-left: auto;    
+    height: 450px;
+    padding-right: 15%; 
+    float: right;
+    
+ }
+ 
+
+
+h1{
+    font-size:50px;
+    font-family:Arial;
+    text-align: center;
+}
+p{
+    font-size: 24px;
+    line-height: 50px;
+} 
+.Statistiken-seite, .arbeitswelt-seite, .sonstiges-seite{
+    background: #1c1c1c;
+    color:white;
+}   
+.Sehenswürdigkeiten-seite, .Besonderheiten-seite{
+    background:#23395d;
+}
+html{
+    scroll-behavior:smooth;
+}
+@media (min-width: 1200px) {
+    h1 {
+      font-size: 4rem;
+    }
+  }
+
+@media (max-width: 600px) {
+    body{
+
+    }
+    .willkommen-text h1{
+        font-size: 40px;
+    }
+    .umschalt-knopf {
+        display: flex;
+    }
+
+    .navbar-links{
+        display:none;
+    }
+
+    .navbar{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar-links ul{
+        width: 100%;
+        flex-direction: column;   
+    }
+
+    .navbar-links li{
+        text-align: center;      
+    }
+
+    .navbar-links li a{
+        padding: 1rem 2rem;
+    }
+
+    .navbar-links.active{
+        display: flex;
+    }
+
+}
